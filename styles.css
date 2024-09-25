@@ -9,14 +9,14 @@ body {
     line-height: 1.6;
     color: white;
     background-color: #1a2b46;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: rgba(52, 152, 219, 0.05); /* Light blue background */
+    background-color: rgba(52, 152, 219, 0.05);
 }
 
 header {
@@ -56,7 +56,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
-    padding-top: 70px; /* Account for header height */
+    padding-top: 70px;
 }
 
 section {
@@ -86,17 +86,17 @@ h1:hover {
 h2 {
     font-size: 28px;
     margin-bottom: 15px;
-    color: #2980b9;
+    color: #3498db;
     transition: color 0.3s ease;
 }
 
 h2:hover {
-    color: #2c3e50;
+    color: #2980b9;
 }
 
 p.subtitle {
     font-size: 18px;
-    color: #3498db;
+    color: #2980b9;
     margin-bottom: 20px;
     transition: color 0.3s ease;
 }
@@ -153,7 +153,6 @@ footer {
     z-index: 5;
 }
 
-/* Add some subtle animations */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -170,34 +169,4 @@ footer {
 
 .fadeOut {
     animation: fadeOut 0.5s ease-out;
-}
-
-/* Dark mode styles */
-.dark-mode body {
-    background-color: #1a1a1a;
-    color: white;
-}
-
-.dark-mode .container {
-    background-color: #1a1a1a;
-}
-
-.dark-mode header {
-    background-color: #3498db;
-}
-
-.dark-mode nav ul li a {
-    color: white;
-}
-
-.dark-mode main section {
-    background-color: #34495e;
-}
-
-.dark-mode button {
-    background-color: #2980b9;
-}
-
-.dark-mode footer {
-    background-color: #34495e;
 }

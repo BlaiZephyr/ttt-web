@@ -28,10 +28,8 @@ document.getElementById('contactForm').addEventListener('submit', async function
         return;
     }
 
-    // Update last submit time
     localStorage.setItem('lastSubmitTime', now);
 
-    // Check if @everyone is in the message
     if (message.includes('@everyone')) {
         alert("Error: Message contains '@everyone'. Please remove this mention before resubmitting.");
         return;
